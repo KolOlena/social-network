@@ -1,0 +1,43 @@
+/*для всего сайдбара*/
+.nav {
+    grid-area: n;
+    background-color: burlywood;
+    padding: 20px;
+}
+
+/*для ссылок*/
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+/*для активных ссылок*/
+.item a.active {
+    color: dodgerblue;
+}
+
+/*общий для блока с друзьями*/
+.friends {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*ава+имя друга*/
+.bestFriends {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+/*аватарки друзей*/
+.bestFriends img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+
+.friendsHeader {
+    font-size: x-large;
+}
