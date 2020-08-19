@@ -5,11 +5,8 @@ let rerenderEntireTree = () => {
 let state = {
   messegesPage: {
     dialogs: [
-<<<<<<< HEAD
       {id: 1, name: 'Ivan for git', image: 'https://img.icons8.com/material/4ac144/256/user-male.png'},
-=======
-      {id: 1, name: 'Ivan chenged for master', image: 'https://img.icons8.com/material/4ac144/256/user-male.png'},
->>>>>>> master
+      {id: 1, name: 'Ivan', image: 'https://img.icons8.com/material/4ac144/256/user-male.png'},
       {id: 2, name: 'Petr', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9orP99Ey4GYJTWuy2D5Ys_schXKVwCwcKAg&usqp=CAU'},
       {id: 3, name: 'Ann', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSajs_UddBfsexfYPCS7V1tWYRuS5U1Bk8Wqw&usqp=CAU'},
       {id: 4, name: 'Svetlana', image: 'https://wsbuq.ru/prodvizheniye-saytov/img/contact.png'},
