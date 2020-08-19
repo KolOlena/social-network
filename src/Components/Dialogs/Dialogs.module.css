@@ -32,7 +32,7 @@
     height: 50px;
     border-radius: 30px;
 }
-/*имена в диалоге изменение комментария*/
+/*имена в диалоге*/
 .dialogItem {
     display: grid;
     align-items: center;

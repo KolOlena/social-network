@@ -5,7 +5,7 @@ let rerenderEntireTree = () => {
 let state = {
   messegesPage: {
     dialogs: [
-      {id: 1, name: 'Ivan for git', image: 'https://img.icons8.com/material/4ac144/256/user-male.png'},
+      {id: 1, name: 'Ivan', image: 'https://img.icons8.com/material/4ac144/256/user-male.png'},
       {id: 1, name: 'Ivan', image: 'https://img.icons8.com/material/4ac144/256/user-male.png'},
       {id: 2, name: 'Petr', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9orP99Ey4GYJTWuy2D5Ys_schXKVwCwcKAg&usqp=CAU'},
       {id: 3, name: 'Ann', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSajs_UddBfsexfYPCS7V1tWYRuS5U1Bk8Wqw&usqp=CAU'},
