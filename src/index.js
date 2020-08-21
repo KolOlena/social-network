@@ -19,14 +19,6 @@ rerenderEntireTree(state);
 
 subscribe(rerenderEntireTree);
 
-
-
-
-
-
-
-
-
 rerenderEntireTree(state);
 
 

@@ -35,13 +35,13 @@ export const addPost = () => {
   };
   state.profilePage.posts.push(newPost);
   state.profilePage.newPostText = '';
-  rerenderEntireTree();
+  rerenderEntireTree(state);
 }
 
 
 export const updateNewPostText = (newText) => {
   state.profilePage.newPostText = newText;
-  rerenderEntireTree();
+  rerenderEntireTree(state);
 }
 
 export const subscribe = (observer) => {
