@@ -10,7 +10,7 @@ import Settings from "./Components/Settings/Settings";
 import { BrowserRouter, Route } from "react-router-dom";
 
 
-const App = ({state: {messegesPage, profilePage}, addPost, updateNewPostText}) => {
+const App = ({state: {messegesPage, profilePage}, dispatch}) => {
 
   return (
     <BrowserRouter>
@@ -18,8 +18,8 @@ const App = ({state: {messegesPage, profilePage}, addPost, updateNewPostText}) =
         <Header/>
         <Navbar dialogsState={messegesPage}/>
         <div className='app-wraper-content '>
-          <Route exact path='/dialogs' render = {() => <Dialogs dialogsState={messegesPage} /> } />
-          <Route exact path='/profile' render = {() => <Profile profileState={profilePage} addPost={addPost} updateNewPostText={updateNewPostText}/>} />
+          <Route exact path='/dialogs' render = {() => <Dialogs dialogsState={messegesPage} dispatch={dispatch}/> } />
+          <Route exact path='/profile' render = {() => <Profile profileState={profilePage} dispatch={dispatch}/>} />
           <Route exact path='/news' render = {() => <News />} />
           <Route exact path='/music' render = {() => <Music />} />
           <Route exact path='/settings' render = {() => <Settings />} />

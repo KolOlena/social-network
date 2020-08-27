@@ -6,7 +6,7 @@ import MessegeArea from "./MessegeArea/MessegeArea";
 
 
 
-const Dialogs = ({dialogsState: {dialogs, messege}}) => {
+const Dialogs = ({dialogsState: {dialogs, messege, newMessegeBody}, dispatch}) => {
 
   const dialogsArray = dialogs
     .map(el => <DialogItem dialogData={el}/>);
@@ -22,7 +22,7 @@ const Dialogs = ({dialogsState: {dialogs, messege}}) => {
       <div className={classes.test}>
         {messegeArray}
         <div>
-          <MessegeArea />
+          <MessegeArea newMessegeBody={newMessegeBody} dispatch={dispatch}/>
         </div>
       </div>
 

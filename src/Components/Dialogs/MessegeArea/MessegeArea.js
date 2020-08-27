@@ -1,22 +1,28 @@
 import React from "react";
-import classes from '../Dialogs.module.css';
 
-const MessegeArea = () => {
+import {sendMessegeActionCreator, updateNewMessegeActionCreator} from "../../../redux/dialogs-reducer";
+
+
+const MessegeArea = ({dispatch, newMessegeBody}) => {
 
   let newMessege = React.createRef();
 
-  let sendMessege = () => {
+  let sendMessegeButton = () => {
+      dispatch(sendMessegeActionCreator());
+  };
+
+  let onMessegeChange = () => {
     let messege = newMessege.current.value;
-    alert(messege);
+    dispatch(updateNewMessegeActionCreator(messege));
   };
 
   return (
     <div >
         <div>
-          <textarea ref={newMessege}></textarea>
+          <textarea onChange={onMessegeChange}  ref={newMessege} value={newMessegeBody} placeholder={'Enter your messege'}></textarea>
         </div>
         <div>
-          <button onClick={sendMessege}>Send</button>
+          <button onClick={sendMessegeButton}>Send</button>
         </div>
     </div>
   );
