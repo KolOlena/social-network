@@ -7,8 +7,8 @@ import Post from "./Post/Post";
 
 const MyPosts = ({postsData, newPostText, updateNewPostText, addPostButton}) => {
 
-  const postsArray = postsData.
-  map(({post, likes}) =>
+  const postsArray = postsData
+    .map(({post, likes}) =>
     <Post post={post} likes={likes}/>
   );
 
