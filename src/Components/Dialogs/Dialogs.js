@@ -2,27 +2,28 @@ import React from "react";
 import classes from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogItem";
 import Messege from "./Messege/Messege";
-import {sendMessegeActionCreator, updateNewMessegeActionCreator} from "../../redux/dialogs-reducer";
 
 
+const Dialogs = (props) => {
+  debugger;
+  let state = props.dialogsState;
 
-const Dialogs = ({dialogsState: {dialogs, messege, newMessegeBody}, updateNewMessegeBody, sendMessege}) => {
-
-  const dialogsArray = dialogs
+  const dialogsArray = state.dialogs
     .map(el => <DialogItem dialogData={el}/>);
 
-  const messegeArray = messege
+  const messegeArray = state.messege
     .map(el => <Messege messegeData={el}/>);
+  let newMessegeBody = state.newMessegeBody;
 
     let newMessege = React.createRef();
 
     let sendMessegeButton = () => {
-        sendMessege();
+        props.sendMessege();
     };
 
     let onMessegeChange = () => {
         let messege = newMessege.current.value;
-        updateNewMessegeBody(messege);
+        props.updateNewMessegeBody(messege);
     };
 
 

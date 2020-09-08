@@ -18,7 +18,6 @@ let store  ={
       ],
       newMessegeBody: ''
     },
-
     profilePage: {
       posts: [
         {id: 1, post: 'Hi, how are you', likes: 2},
