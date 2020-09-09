@@ -2,9 +2,6 @@ import React from "react";
 import classes from './MyPosts.module.css';
 import Post from "./Post/Post";
 
-
-
-
 const MyPosts = ({postsData, newPostText, updateNewPostText, addPostButton}) => {
 
   const postsArray = postsData
@@ -19,7 +16,6 @@ const MyPosts = ({postsData, newPostText, updateNewPostText, addPostButton}) => 
   };
 
   let onPostChange = () => {
-    debugger;
     let text = newPostElement.current.value;
     updateNewPostText(text);
   }
