@@ -4,6 +4,7 @@ import MyPosts from "./MyPosts";
 import { connect } from "react-redux";
 
 const mapStateToProps = (state) => {
+  debugger
   return {
     postsData: state.profilePage.posts,
     newPostText: state.profilePage.newPostText
@@ -11,6 +12,7 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch) => {
+  debugger
   return {
     updateNewPostText: (text) => {
       dispatch(updateNewPostTextActionCreator(text));
